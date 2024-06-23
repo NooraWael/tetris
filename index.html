@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <head>
+        <meta charset="utf-8">
+        <script src="app.js" charset="utf-8"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <title>Basic Tetris</title>
+      </head>
+      <body>
+        <div class="header">
+       <H1>TETRIS</H1>
+        </div>
+    <div class="container">
+      <div class="grid">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="taken" id="hide"></div>
+        <div class="taken" id="hide"></div>
+        <div class="taken" id="hide"></div>
+        <div class="taken" id="hide"></div>
+        <div class="taken" id="hide"></div>
+        <div class="taken" id="hide"></div>
+        <div class="taken" id="hide"></div>
+        <div class="taken" id="hide"></div>
+        <div class="taken" id="hide"></div>
+        <div class="taken" id="hide"></div>
+      </div>
+
+      <div class="controls">
+        <h3>Score: <span id="score">0</span></h3>
+        <div id="lives">Lives: 
+          <i class="fas fa-heart heart"></i>
+          <i class="fas fa-heart heart"></i>
+          <i class="fas fa-heart heart"></i>
+          <span id="lives-count">3</span>
+        </div>
+        <button id="start-button">Start</button>
+        <button id="pause-button">Pause</button>
+        <button id="restart-button">Restart</button>
+        
+        <div id="timer">Time: 00:00</div>
+
+      <div class="mini-grid">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+
+      <div id="gifs">
+        <img id="levegif">
+      </div>
+    </div>
+
+<!-- Modal structure with your GIF -->
+<div id="game-over-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="gif-container">
+        <img src="https://media.giphy.com/media/qtgkm1xVilBFWD63CT/giphy.gif" alt="Game Over Animation">
+      </div>
+      <button id="restart-button-modal">Restart</button>
+    </div>
+  </div>
+  
+
+    <!-- Audio elements for sound effects -->
+    <audio id="lineClearSound">
+        <source src="line-clear-sound.mp3" type="audio/mpeg">
+        <!-- Add more <source> elements for different formats if necessary -->
+        Your browser does not support the audio element.
+    </audio>
+
+  <audio id="backgroundMusic" loop>
+    <source src="background.mp3" type="audio/mpeg">
+    <!-- Add more <source> elements for different formats if necessary -->
+    Your browser does not support the audio element.
+</audio>
+  </body>
+</html>
